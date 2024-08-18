@@ -14,7 +14,8 @@ $ gcc -shared -o archivo.so -fPIC archivo.c $(python3-config --cflags --ldflags)
 #####################################################################################
 
 # compilar c 
-$ gcc -shared -o libcalcular_pi.so -fPIC calcular_pi.c -lm
+$ gcc -shared -o libcalcular_pi.so -fPIC calcular_pi.c -lm # sin optimiazcion
+$ gcc -shared -o libcalcular_pi.so -fPIC -O2 calcular_pi.c -lm
 
 
 ######################################################################################
