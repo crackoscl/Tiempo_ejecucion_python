@@ -1,0 +1,24 @@
+#compilar cython a .so
+
+$ cython -a nombre archivo.pyx 
+
+# esto genera un archivo html con las mejoras 
+# un archivo.c 
+# conpilar con el siguiente comando 
+
+$ gcc -shared -o archivo.so -fPIC archivo.c $(python3-config --cflags --ldflags)
+
+#esto genera un archivo.so que se puede importar directo desde python 
+
+
+#####################################################################################
+
+# compilar c 
+$ gcc -shared -o libcalcular_pi.so -fPIC calcular_pi.c -lm
+
+
+######################################################################################
+
+# compilar Go
+
+$ go build -o calcular_go.so -buildmode=c-shared calcular_go.go 
