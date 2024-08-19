@@ -1,5 +1,5 @@
 import time
-# necesario para usar el .so de c
+# necesario para usar el .so de C y Go
 import ctypes
 from calcular_py.calcular import calcular_
 from calcular_cython.calcular_cython import calcular_cython
